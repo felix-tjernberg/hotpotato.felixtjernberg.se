@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Luckiest Guy";
+    src: url("src/downloaded fonts/LuckiestGuy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spline Sans";
+    src: url("src/downloaded fonts/SplineSans-Regular.ttf") format("truetype");
+}
+
+:root {
+    --font-family-fat: "Luckiest Guy";
+    --font-family-thin: "Spline Sans";
+
+    --gray-static-000: hsl(0, 0%, 98%);
+    --gray-static-500: hsl(0, 0%, 80%);
+    --gray-static-900: hsl(0, 0%, 5%);
+    --color-primary: #7a5901;
+
+    --gray-000: var(--gray-static-000);
+    --gray-500: var(--gray-static-500);
+    --gray-900: var(--gray-static-900);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --gray-900: var(--gray-static-000);
+        --gray-500: var(--gray-static-500);
+        --gray-000: var(--gray-static-900);
+    }
+}
+
+[data-lightness-mode="light"] {
+    --gray-000: var(--gray-static-000);
+    --gray-500: var(--gray-static-500);
+    --gray-900: var(--gray-static-900);
+}
+
+[data-lightness-mode="dark"] {
+    --gray-900: var(--gray-static-000);
+    --gray-500: var(--gray-static-500);
+    --gray-000: var(--gray-static-900);
+}

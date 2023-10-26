@@ -1,0 +1,17 @@
+.primary-fat-500,
+.primary-fat-100 {
+    font-family: var(--font-family-fat);
+}
+
+.primary-fat-500 {
+    font-size: 42px;
+}
+
+.primary-fat-100,
+.primary-thin-100 {
+    font-size: 18px;
+}
+
+.primary-thin-100 {
+    font-family: var(--font-family-thin);
+}

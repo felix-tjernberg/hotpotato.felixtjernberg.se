@@ -1,0 +1,32 @@
+html {
+    text-wrap: balance;
+}
+html,
+body {
+    background-color: var(--gray-000);
+    color: var(--gray-900);
+    height: 100%;
+}
+
+h1 {
+    text-transform: capitalize;
+    line-height: 1;
+}
+p {
+    line-height: 1.666;
+}
+
+@font-face {
+    font-family: "Luckiest Guy";
+    src: url("src/downloaded fonts/LuckiestGuy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spline Sans";
+    src: url("src/downloaded fonts/SplineSans-Regular.ttf") format("truetype");
+}
+
+:root {
+    --font-family-fat: "Luckiest Guy";
+    --font-family-thin: "Spline Sans";
+}
