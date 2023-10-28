@@ -9,7 +9,7 @@
 
 <Background>
     <slot />
-    <div style="display: flex; place-self: end center; opacity: 0.3">
+    <div style="display: flex; place-self: end center; opacity: 0.6; color: var(--gray-static-900);">
         <p>
             This website uses
             <a
@@ -21,10 +21,19 @@
             to keep track the game state
         </p>
         {#if $cookiesSaved}
-            <!-- TODO style this button to look like a link -->
             <form action={`/?/${removeCookiesKey}`} method="POST">
-                <button type="submit">click here to remove cookies</button>
+                <button type="submit">, click here to remove cookies</button>
             </form>
         {/if}
     </div>
 </Background>
+
+<style>
+    button {
+        padding: 0;
+        line-height: 1.666;
+        font-size: inherit;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+</style>

@@ -54,13 +54,13 @@
 >
     {#each [0, 1, 2, 3, 4] as index}
         <div>
-            <h2>
+            <h2 class="primary-fat-100">
                 {names[index] ? names[index] : `Player ${index + 1}`}
             </h2>
             <SingleLineStringInput
                 bind:value={names[index]}
-                name="name${index + 1}"
-                placeholder={`player ${index + 1}`}
+                name="name{index + 1}"
+                placeholder="Type player {index + 1} name here"
                 pattern="[^␟]*"
                 title="␟ symbol is not allowed"
             />
@@ -76,9 +76,10 @@
 
 <style>
     h2 {
-        max-width: 10ch;
+        text-align: center;
         text-overflow: ellipsis ellipsis;
         overflow: auto;
+        color: var(--gray-static-900);
     }
     form {
         place-items: center;

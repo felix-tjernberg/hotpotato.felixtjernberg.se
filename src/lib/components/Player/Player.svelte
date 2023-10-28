@@ -3,7 +3,6 @@
     import Button from "../Button/Button.svelte"
     import Potato from "../Potato/Potato.svelte"
     import Person from "./Person.svelte"
-    import { send, receive } from "$lib/utilities/transitions"
     import { passPotatoKey } from "$routes/game/actionKeys"
     import { cookiesSaved, cookiesSavedKey } from "$lib/utilities/stores/cookiesSaved"
     import { enhance } from "$app/forms"
@@ -59,5 +58,6 @@
     .emoji {
         font-size: 36px;
         position: relative;
+        color: var(--gray-static-900);
     }
 </style>

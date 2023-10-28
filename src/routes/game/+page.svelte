@@ -15,4 +15,10 @@
 </script>
 
 <Game />
-<a href="/" style="place-self: start start; opacity: 0.3">&#60; back to setup</a>
+<a href="/" style="place-self: start start; opacity: 0.6">&#60; back to setup</a>
+
+<style>
+    a {
+        color: var(--gray-static-900);
+    }
+</style>
